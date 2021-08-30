@@ -1,0 +1,4 @@
+appx	516
+appy	167
+lastgame	www	21-08-29 22:47:05
+lastsort	by status by name

@@ -1,0 +1,40 @@
+Tylosaurus Help
+
+TITLE BAR
+	The presence of asterisks in the window title means one or more games have not been saved to disk. Clicking the window close button saves all games and exits the app without any prompts.
+	
+MENU game
+	new - Start a new game. Choose a template and an opponent name.
+	save - Save all games. Save is also executed automatically by the window close button and by the copy rack function (below).
+	rematch - Start a new game with the opponent whose current game is on the screen.
+	clear - Clear the board and rack for the current game. Reset various letter totals. Keep the same start time.
+	over - Toggle the current game between game over and game active status. Writes the end time to the game record, or clears it. The difference between statuses is merely in how the game titles will look and sort in the game browser.
+	rename - Change the opponent name of the current game and keep everything else the same.
+	delete - Delete the game from the list, from memory, and from disk.
+	quit - Ask to save, then quit.
+
+MENU edit
+	copy rack/bag - Copy the letters in the rack or the remaining letters in the bag to the clipboard. In the case of blank tile, substitute the clipboard-specific symbol as defined in the game template. This is for pasting letters into websites which have their own representation for blank tile. This function also saves games to disk if any of them need it. Because why not?
+	justify rack - Move all letters in the rack as far left as they will go and position the active cell on the first unused space, or on the first letter if there are no unused spaces.
+	sort - Choose from various sort criteria for the game browser. Order is always ascending.
+
+MENU help
+	Tylo - Display this text.
+	User - Display whatever text is in help-user.txt, which may be edited at will using an external editor.
+
+MESSAGE - Display reads 			a/b     c     d thru e
+where
+	a is number of active games
+	b is number of games
+	c is opponent name
+	d is start time
+	e is end time if applicable
+							
+BROWSER - Shows opponent name and start time.
+
+NOTES
+	Home key goes to top of notes. End key goes to bottom. There are no start/end of line keystrokes. Ctrl-delete clears the notes (for the current game only).
+							
+BAG
+	Displays letter, point value, remaining quantity, given quantity (i.e. at start of game). All these values are defined in the game templates. Clicking on a row will highlight every occurence of that letter in the game. Click again to clear highlight. Rows by default change from white to gray to red as the remaining quantities go from positive to zero to negative. Under the bag are totals for remaining vowels, consonants, and all tiles. Note by default (in English) the letter Y is considered both a vowel and a consonant. Similarly, blank tiles must be considered as both. So it will frequently be the case that total < vowels + cons. A letter's "sonority" is defined in the templates.
+
