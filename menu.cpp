@@ -12,9 +12,9 @@ Menu::Menu(int x, int y, int w, int h, vector<Tbl*>tbls, optmap_t) : Fl_Menu_Bar
 	add("Game/rename",				FL_CTRL +			'n',	rename_mcb,	this);
 	add("Game/delete",				FL_CTRL +			'd',	del_mcb, 	this);
 	add("Game/quit app",				FL_CTRL + 			'q',	quit_mcb,	this);
-	add("Edit/undo",					FL_CTRL +			'z',	undo_mcb,	this);
+	add("&Edit/undo",					FL_CTRL +			'z',	undo_mcb,	this);
 	add("Edit/redo",					FL_CTRL +			'y',	redo_mcb,	this);
-	add("&Edit/copy rack",			FL_CTRL + 			'c',	copy_mcb,	this);	// shared callback
+	add("Edit/copy rack",			FL_CTRL + 			'c',	copy_mcb,	this);	// shared callback
 	add("Edit/copy bag",				FL_CTRL + 			'b',	copy_mcb,	this);
 	add("Edit/justify rack",		FL_CTRL + FL_End,			squish_mcb,	this);
 	add("&Sort/by name",				0,								sort_mcb,	this);	// shared
